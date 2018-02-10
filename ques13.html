@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script >
+			$(function() {
+				$('#button1').click(function() {
+					var max = -1;
+					$('li').each(function() {
+						max = max > $(this).height() ? max : $(this).height();
+					})
+					var res = "Max Element height is " + max;
+					$('#res_p').append(res);
+				})
+			});
+	</script>
+</head>
+	<body>
+		<ul>
+			<li style="height: 30px"> First Item.</li>
+			<li style="height: 50px"> Second Item.</li>
+			<li style="height: 80px"> Third Item.</li>
+		</ul>
+		<button id="button1">Click to find out the max height.</button>
+		<p id="res_p"></p>
+	</body>
+</html>
