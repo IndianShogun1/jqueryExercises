@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
+	<head>
+		<meta charset="utf-8">
+		<style>
+			.class1 {
+				color: yellow;
+			}
+		</style>
+	</head>
+		<body>
+			<p id="firstp">
+				Class changed.
+			</p>
+		</body>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script >
+	<script>
 			$(function() {
-				$("p").addClass('class1');
+				$("#firstp").addClass('class1');
 			});
 	</script>
-	<style>
-		.class1 {
-			color: yellow;
-		}
-	</style>
-</head>
-	<body>
-		<p>
-			Class changed.
-		</p>
-	</body>
 </html>

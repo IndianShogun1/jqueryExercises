@@ -2,8 +2,14 @@
 <html>
 <head>
 	<meta charset="utf-8">
+</head>
+	<body>
+		<div id="first_div">This is a div.
+			<li id="id_in_div">This is a li.</li>
+		</div>
+	</body>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script >
+	<script>
 			$(function() {
 				$('#first_div').click(function() {
 					alert("Div element was clicked.");
@@ -14,10 +20,4 @@
 				})
 			});
 	</script>
-</head>
-	<body>
-		<div id="first_div">This is a div.
-			<li id="id_in_div">This is a li.</li>
-		</div>
-	</body>
 </html>
